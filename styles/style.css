@@ -19,6 +19,11 @@ font-family: 'Work Sans', sans-serif;
     margin-bottom: 50px;
     margin-top: 30px;
 }
+.text-light-gray{
+    color:#727272;
+
+
+}
 /* header styles */
 header{
     background: rgba(255, 144, 14, 0.10);
@@ -62,29 +67,53 @@ nav li a{
     margin-bottom: 0px;
 }
 .banner-description{
-    color:  #727272;
     margin-top: 10px;
 }
 .banner img{
     width: 100%;
 }
+/* featurs styles */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.teams-container{
+   display: flex;
+   align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    
+}
+.teams-content{
+    padding-right:20px ;
+    padding-left:20px;
+}
+
 /* mobile deviser responsive */
 @media screen and (max-width:576px) {
     header{
         padding: 20px;
     }
-    nav{
+    nav,.teams-container{
         flex-direction: column;
     }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
 /* tablet or medium devices */
+
 @media screen and (min-width:576px)and(max-width:960px) {
     header{
         padding: 50px;
     }
-    nav{
+    nav,.teams-container{
         flex-direction: column;
     }
     
