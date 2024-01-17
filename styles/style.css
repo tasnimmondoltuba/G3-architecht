@@ -12,14 +12,12 @@ font-family: 'Work Sans', sans-serif;
     width: 180px;
     height: 64px;
     color: #FFF;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     border: 1px solid orange;
+    cursor:pointer;
     margin-bottom: 50px;
     margin-top: 30px;
-
-
-
 }
 /* header styles */
 header{
@@ -66,4 +64,28 @@ nav li a{
 .banner-description{
     color:  #727272;
     margin-top: 10px;
+}
+.banner img{
+    width: 100%;
+}
+/* mobile deviser responsive */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+
+/* tablet or medium devices */
+@media screen and (min-width:576px)and(max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
 }
